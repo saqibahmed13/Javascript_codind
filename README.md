@@ -39,8 +39,36 @@ const b = {
       console.log(this.name);
       console.log(self.name);
     })();
+    
   },
 };
 b.f();
 
 Explanation : It will print Vivek,  then undefined or global object  because its an IIFE function it has no boundaries and vivek again because self is assigned with this (self = this) <br> this creates a reference between outer and inner function. 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Converting array to objects 
+
+function arrayToObject(arr){
+    let obj = {};
+    for(let i = 0; i<arr.length;i++){
+        obj[i]=arr[i];
+    }
+    return obj;
+}
+let arr = [1,2,3,4,5];
+console.log(arr);
+let obj = arrayToObject(arr);
+console.log(obj);
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Converting objects to arrays 
+const obj = {
+    name:"saqib",
+    age:"23",
+    gender:"male"
+};
+
+console.log(Object.keys(obj));
+console.log(Object.values(obj));
+console.log(Object.entries(obj));
+----------------------------------------------------------------------------------------------------------------------------------------------------
