@@ -6,7 +6,7 @@ x[z] = {name:"Akki"};
 console.log(x[y]);  // output name: Akki
 
 Explanation: When we use objects as keys x[y]  (y is an object) it will be converted into a string x[ object Object ] since we are using twice the value will be <br>
-x[z] overwrites the previous value by name : Akki. 
+x[z] overwrites the previous value by name : Akki
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
  const a = function(){
@@ -45,7 +45,7 @@ const b = {
 b.f();
 
 Explanation : It will print Vivek,  then undefined or global object  because its an IIFE function it has no boundaries and vivek again because self is assigned with this (self = this) <br> this creates a reference between outer and inner function. 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Converting array to objects 
 
 function arrayToObject(arr){
