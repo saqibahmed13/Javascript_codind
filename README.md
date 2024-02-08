@@ -9,7 +9,7 @@ Explanation: When we use objects as keys x[y]  (y is an object) it will be conve
 x[z] overwrites the previous value by name : Akki
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
- const a = function(){
+ const a = function() {
     console.log(this);
     const b = {
       func1: function(){
